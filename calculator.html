@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="calculator.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <section class="my-calculator">
+            <div class="container input">
+                <input type="text" class="container-display">
+                 <input type="text" placeholder="0" class="display">
+            </div>
+            <div>
+                <button class="action" data-action="CE">CE</button>
+                <button class="action" data-action="C">C</button>
+                <button class="action" data-action="backspace"><i class="fas fa-backspace"></i></button>
+                <button class="action" data-action="/">&divide;</button>
+            </div>
+            <div>
+                <button class="value" data-value="7">7</button>
+                <button class="value" data-value="8">8</button>
+                <button class="value" data-value="9">9</button>
+                <button class="action" data-action="*">X</button>
+            </div>
+            <div>
+                <button class="value" data-value="4">4</button>
+                <button class="value" data-value="5">5</button>
+                <button class="value" data-value="6">6</button>
+                <button class="action" data-action="-">-</button>
+            </div>
+            <div>
+                <button class="value" data-value="1">1</button>
+                <button class="value" data-value="2">2</button>
+                <button class="value" data-value="3">3</button>
+                <button class="action" data-action="+">+</button>
+            </div>
+            <div>
+                <button class="action" data-action="iDoNotKnow">+-</button>
+                <button class="value" data-value="0">0</button>
+                <button class="action" data-action=".">.</button>
+                <button class="action" data-action="=">=</button>
+            </div>
+        </section>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="calculator.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>
